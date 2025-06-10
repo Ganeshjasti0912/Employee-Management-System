@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SummaryCard from './SummaryCard.jsx';
+import SummaryCard from './Summarycard.jsx';
 import { FaBuilding, FaUsers, FaMoneyBillWave, FaFileAlt, FaCheckCircle, FaHourglassHalf, FaTimesCircle } from 'react-icons/fa';
 import axios from 'axios';
 
@@ -8,7 +8,7 @@ const AdminSummary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-       const summary = await axios.get('http://localhost:3000/api/dashboard/summary', {
+       const summary = await axios.get('https://ems-backend-i0kh.onrender.com/api/dashboard/summary', {
           
           headers: {
             
